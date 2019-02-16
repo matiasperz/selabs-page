@@ -1,0 +1,64 @@
+hr{
+    max-width: 250px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    background-color: rgba(34, 34, 34, 0.1);
+}
+
+.first-level-footer{
+    padding: 0px 30px 0px 30px;
+}
+
+.footer-section{
+    margin-top: 40px;
+}
+
+.navbar-logo-text{
+    margin-left: 8px;
+}
+
+.hero-body{
+    background: url(./images/Banner_hero4.jpg) no-repeat center;
+}
+
+.about-us{
+    padding: 80px 0px 80px 0px;
+}
+
+.card.about-us-card{
+    width: 400px;
+    box-shadow: 0 0!important;
+    border: 0 ;
+}
+
+figure.aboutUs-figure{
+    width: 250px;
+    margin: auto;
+}
+
+img.aboutUs-img1{
+    border-radius: 50%;
+}
+
+.section.about-us-img-section{
+    margin-top: 70px;
+}
+
+.blink{
+    margin: 0px;
+    animation: 1300ms blinkIn infinite;
+}
+
+@keyframes blinkIn{
+    0% {
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
