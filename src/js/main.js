@@ -18,3 +18,11 @@ function topFunction() {
     if(document.documentElement.scrollTop == 0) clearInterval(scrollUpInterval);
   }, 5)
 }
+
+function showSocialMedia(target){
+  target.firstElementChild.children[4].style = 'visibility: visible';
+}
+
+function hideSocialMedia(target){
+  target.firstElementChild.children[4].style = 'visibility: hidden';
+}

@@ -15,6 +15,10 @@ textarea{
     resize: none !important;
 }
 
+a{
+    color: inherit;
+}
+
 #goTopButton {
     display: none;
     position: fixed;
@@ -135,6 +139,12 @@ img.aboutUs-img1{
     padding: 0px 40px 0px 40px;
     font-weight: normal;
     font-size: 17px
+}
+
+.team-social-media-section{
+    margin-top: 2rem;
+    padding: 0px 4rem 0px 4rem;
+    visibility: hidden;
 }
 
 .blink{
