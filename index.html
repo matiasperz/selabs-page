@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="src/css/main.css">
     <link rel="icon" href="./images/favicon_32x32.png">
 </head>
 <body>
+    <button onclick="topFunction()" id="goTopButton" title="Go to top"><i class="fa fa-angle-up"></i></button> 
 
     <section class="hero is-medium">
             <!-- Hero head: will stick at the top -->
@@ -20,18 +21,18 @@
 
                         <div class="navbar-brand">
                             <a class="navbar-item">
-                                <img src="./images/Selabs-logo-mini.png" alt="Selabs">
-                                <span class="title is-4 navbar-logo-text">Selabs<span class="title is-4 navbar-logo-text blink">_</span></span>
+                                <img class="logoFlip" src="./images/Selabs-logo-mini.png" alt="Selabs">
+                                <span class="title is-4 navbar-logo-text logoIn">Selabs<span class="title is-4 navbar-logo-text blink">_</span></span>
                             </a>
                         </div>
 
                         <div id="navbarMenuHeroA" class="navbar-menu">
                             <div class="navbar-end">
                                 <a class="navbar-item">
-                                    Home
+                                    About Us
                                 </a>
                                 <a class="navbar-item">
-                                    About Us
+                                    Team
                                 </a>
                                 <a class="navbar-item">
                                     Contact
@@ -94,9 +95,10 @@
                                     <div class="content">
                                         <h1 class="title is-4">September Selabs_</h1>
                                         <p>
-                                            Selabs_ has the experts, knowledge, and experience to help
-                                            you determine the best places to apply a blockchain to get
-                                            the most out of any blockchain solution.
+                                            Our development service includes to follow up the clients in
+                                            the counselling process, the design of their UI / UX products,
+                                            integration with applications, development of their ICOS and dedicated
+                                            designs for each of their needs .
                                         </p>
                                     </div>
                                 </div>
@@ -122,6 +124,109 @@
                 </div>
             </div>
     </section>
+
+    <br><br><br><br>
+
+    <section class="team">
+        <div class="container">
+            <div class="has-text-centered">
+                <h1 class="title is-1">Team</h1>
+                <br>
+                <h2 class="subtitle is-4 has-text-grey">Meet the people behind the scenes</h2>
+                <hr>
+            </div>
+            <div class="section team-section">
+                <div class="columns">
+                    <div class="column">
+                        <div class="has-text-centered">
+                            <img src="./images/team_enzo.jpg" class="team-img" alt="Team enzo">
+                            <h4 class="title is-4">| Enzo Wouilloz |</h4>
+                            <p class="subtitle is-5 has-text-grey">CEO</p>
+                            <p class="team-text">
+                                    Enzo began studying the blockchain in 2015. With 14 
+                                    years he started to study administration of companies.
+                                    His career is chief executive officer and his passions is 
+                                    finance economy and blockchain is the right person to manage 
+                                    the personnel and finances of the company and take SeLabs to the world
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="has-text-centered">
+                            <img src="./images/team_lucas.jpg" class="team-img" alt="Team lucas">
+                            <h4 class="title is-4">| Lucas Miraglia |</h4>
+                            <p class="subtitle is-5 has-text-grey">CTO - COO</p>
+                            <p class="team-text">
+                                    Lucas started his journey as a developer in 2007. 
+                                    At the age of 15, he started building websites on 
+                                    his own, setting off a passion for technology research. 
+                                    His career and dedication led him to be on top of every 
+                                    technological aspect that runs in selabs_
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="has-text-centered">
+                            <img src="./images/team_fernando.jpg" class="team-img" alt="Team fernando">
+                            <h4 class="title is-4">| Fernando Suarez |</h4>
+                            <p class="subtitle is-5 has-text-grey">CMO - Business Manager</p>
+                            <p class="team-text">
+                                Fernando Suarez providing a challenging attitude for almost 16 
+                                years & involved in several adventures ranging from IT, Banking,
+                                Industrial, Government, Oil & Gas, Startups, pursuing excellence 
+                                and problem-solving mindset to benefit our Customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <br><br><br><br>
+
+    <section class="contact">
+        <div class="container">
+            <div class="has-text-centered">
+                <h1 class="title is-1">Contact</h1>
+                <br>
+                <h2 class="subtitle is-4 has-text-grey">Send us a message and we will contact you!</h2>
+                <hr>
+            </div>
+
+            <div class="section">
+                <div class="level contact-form-section">
+                    <div class="container name-email-section">
+                        <div class="field">
+                            <input type="text" class="input is-medium" placeholder="Your name" data-validation-required-message="Please enter a name" required="true" >
+                        </div>
+
+                        <div class="field">
+                            <input type="email" class="input is-medium" placeholder="Your email" data-validation-required-message="Please enter a mail" required="true">
+                        </div>
+
+                        <div class="field">
+                            <input type="tel" class="input is-medium" placeholder="Your phone" data-validation-required-message="Please enter a phone" required="true">
+                        </div>
+                    </div>
+                    <div class="container text-section">
+                        <div class="field">
+                            <textarea type="text" class="textarea is-medium" placeholder="Your message..." rows="4" spellcheck="true" data-validation-required-message="Please enter a message" required="true"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="has-text-centered">
+                    <button class="button is-success is-medium"><strong>Send Message</strong></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br><br><br><br>
 
     <footer class="footer">
         <div class="container">
@@ -161,5 +266,6 @@
         </div>
     </footer>
     
+    <script src="src/js/main.js"></script>
 </body>
 </html>

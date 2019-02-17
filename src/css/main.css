@@ -1,0 +1,188 @@
+body{
+    background: -webkit-linear-gradient(rgb(174, 0, 255), violet, white) center fixed;
+    background: linear-gradient(rgb(174, 0, 255), violet, white) center fixed;
+    background:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgb(174, 0, 255)), color-stop(60%, violet), color-stop(100%, white)) center fixed;
+}
+
+hr{
+    max-width: 250px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    background-color: rgba(34, 34, 34, 0.1);
+}
+
+textarea{
+    resize: none !important;
+}
+
+#goTopButton {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 5rem;
+    height: 5rem;
+    z-index: 99;
+    font-size: 60px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: grey;
+    cursor: pointer; 
+    box-shadow: 0px 0px 30px #0000002f;
+    border-radius: 50%;
+}
+
+#goTopButton:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 50px #0000002f;
+}
+
+#goTopButton:active{
+    transform: scale(0.8);
+    box-shadow: 0px 0px 25px hsla(0, 0%, 0%, 0.432);
+}
+
+.subtitle{
+    font-weight: lighter;
+}
+
+.hero-head{
+    background: white;
+}
+
+.first-level-footer{
+    padding: 0px 30px 0px 30px;
+}
+
+.footer-section{
+    margin-top: 40px;
+}
+
+.navbar-logo-text{
+    margin-left: 8px;
+}
+
+
+
+.hero-body{
+    background: transparent;
+}
+
+.about-us{
+    padding: 80px 0px 80px 0px;
+    background: white;
+}
+
+.card.about-us-card{
+    width: 400px;
+    box-shadow: 0 0!important;
+    border: 0 ;
+}
+
+figure.aboutUs-figure{
+    width: 250px;
+    margin: auto;
+}
+
+img.aboutUs-img1{
+    border-radius: 50%;
+}
+
+.section.about-us-img-section{
+    margin-top: 2rem;
+}
+
+
+
+.contact{
+    padding: 80px 0px 80px 0px;
+    background: white;
+}
+
+.contact-form-section{
+    margin-top: 2rem;
+    margin-bottom: 50px !important;
+}
+
+.name-email-section{
+    padding: 0px 1.5rem 0px 1.5rem;
+}
+
+.text-section{
+    padding: 0px 1.5rem 0px 1.5rem;
+}
+
+
+
+.team{
+    padding: 80px 0px 80px 0px;
+    background: white;
+}
+
+.section.team-section{
+    margin-top: 2rem;
+}
+
+.team-img{
+    width: 225px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.team-text{
+    margin-top: 30px;
+    padding: 0px 40px 0px 40px;
+    font-weight: normal;
+    font-size: 17px
+}
+
+.blink{
+    margin: 0px;
+    animation: 1300ms blinkIn infinite;
+}
+
+.logoIn{
+    animation: 500ms logoIn forwards;
+}
+
+.logoFlip{
+    animation: 1000ms logoFlip forwards;
+}
+
+@keyframes blinkIn{
+    0% {
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes logoIn {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    60%{
+        opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes logoFlip{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
