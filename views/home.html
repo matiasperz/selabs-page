@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="src/css/main.css">
-    <link rel="icon" href="./images/favicon_32x32.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/src/css/main.css">
+    <link rel="icon" href="/static/images/favicon_32x32.png">
 </head>
 <body>
     <button onclick="topFunction()" id="goTopButton" title="Go to top"><i class="fa fa-angle-up"></i></button> 
@@ -21,7 +21,7 @@
 
                         <div class="navbar-brand">
                             <a class="navbar-item">
-                                <img class="logoFlip" src="./images/Selabs-logo-mini.png" alt="Selabs">
+                                <img class="logoFlip" src="/static/images/Selabs-logo-mini.png" alt="Selabs">
                                 <span class="title is-4 navbar-logo-text logoIn">Selabs<span class="title is-4 navbar-logo-text blink">_</span></span>
                             </a>
                         </div>
@@ -32,7 +32,7 @@
                                     About Us
                                 </a>
                                 <a class="navbar-item">
-                                    Team
+                                    Founders
                                 </a>
                                 <a class="navbar-item">
                                     Contact
@@ -67,59 +67,55 @@
                     <hr>
                 </div>
                 <div class="section about-us-img-section">
-                    <div class="level">
-                        <div class="card about-us-card">
-                                <div class="card-image">
-                                    <figure class="image aboutUs-figure">
-                                    <img src="./images/AboutUs_img1.jpg" class="aboutUs-img1" alt="Our Beginnings">
-                                    </figure>
-                                </div>
-                                <div class="card-content has-text-centered">
-                                    <div class="content">
-                                        <h1 class="title is-4">Our Beginnings</h1>
-                                        <p>
-                                            Selabs_ has the experts, knowledge, and experience to help
-                                            you determine the best places to apply a blockchain to get
-                                            the most out of any blockchain solution.
-                                        </p>
-                                    </div>
-                                </div>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="has-text-centered">
+                                <figure class="image aboutUs-figure">
+                                    <img src="/static/images/AboutUs_img2.jpg" class="aboutUs-img1">
+                                </figure>
+                                <h4 class="title is-4">Our Beginnings</h4>
+                                <p class="about-us-text">
+                                    Selabs_ has the experts, knowledge, and experience to help
+                                    you determine the best places to apply a blockchain to get
+                                    the most out of any blockchain solution.
+                                </p>
+                            </div>
                         </div>
-                        <div class="card about-us-card">
-                                <div class="card-image">
-                                    <figure class="image aboutUs-figure">
-                                    <img src="./images/AboutUs_img1.jpg" class="aboutUs-img1" alt="Our Beginnings">
-                                    </figure>
-                                </div>
-                                <div class="card-content has-text-centered">
-                                    <div class="content">
-                                        <h1 class="title is-4">September Selabs_</h1>
-                                        <p>
-                                            Our development service includes to follow up the clients in
-                                            the counselling process, the design of their UI / UX products,
-                                            integration with applications, development of their ICOS and dedicated
-                                            designs for each of their needs .
-                                        </p>
-                                    </div>
-                                </div>
+
+                        <br><br><br>
+
+                        <div class="column">
+                            <div class="has-text-centered">
+                                <figure class="image aboutUs-figure">
+                                    <img src="/static/images/custom_development2.jpg" class="aboutUs-img1">
+                                </figure>
+                                <h4 class="title is-4">September Selabs_</h4>
+                                <p class="about-us-text">
+                                    Our development service includes to follow up the clients in
+                                    the counselling process, the design of their UI / UX products,
+                                    integration with applications, development of their ICOS and dedicated
+                                    designs for each of their needs.
+                                </p>
+                            </div>
                         </div>
-                        <div class="card about-us-card">
-                                <div class="card-image">
-                                    <figure class="image aboutUs-figure">
-                                    <img src="./images/AboutUs_img1.jpg" class="aboutUs-img1" alt="Our Beginnings">
-                                    </figure>
-                                </div>
-                                <div class="card-content has-text-centered">
-                                    <div class="content">
-                                        <h1 class="title is-4">Our Beginnings</h1>
-                                        <p>
-                                            Selabs_ has the experts, knowledge, and experience to help
-                                            you determine the best places to apply a blockchain to get
-                                            the most out of any blockchain solution.
-                                        </p>
-                                    </div>
-                                </div>
+
+                        <br><br><br>
+
+                        <div class="column">
+                            <div class="has-text-centered">
+                                <figure class="image aboutUs-figure">
+                                    <img src="/static/images/Selabs-circulo-shadowed.jpg" class="aboutUs-img1">
+                                </figure>
+                                <h4 class="title is-4">Selabs_</h4>
+                                <p class="about-us-text">
+                                    Selabs_ has the experts, knowledge, and experience to help
+                                    you determine the best places to apply a blockchain to get
+                                    the most out of any blockchain solution.
+                                </p>
+                            </div>
                         </div>
+
+                        
                     </div>
                 </div>
             </div>
@@ -130,16 +126,16 @@
     <section class="team">
         <div class="container">
             <div class="has-text-centered">
-                <h1 class="title is-1">Team</h1>
+                <h1 class="title is-1">Founders</h1>
                 <br>
                 <h2 class="subtitle is-4 has-text-grey">Meet the people behind the scenes</h2>
                 <hr>
             </div>
             <div class="section team-section">
-                <div class="columns">
+                <div class="columns is-gapless">
                     <div class="column" data-name="enzo" onmouseover="showSocialMedia(event.currentTarget)" onmouseout="hideSocialMedia(event.currentTarget)">
                         <div class="has-text-centered">
-                            <img src="./images/team_enzo.jpg" class="team-img" alt="Team enzo">
+                            <img src="/static/images/team_enzo.jpg" class="team-img" alt="Team enzo">
                             <h4 class="title is-4">| Enzo Wouilloz |</h4>
                             <p class="subtitle is-5 has-text-grey">CEO</p>
                             <p class="team-text">
@@ -163,10 +159,10 @@
                             </div>
                         </div>
                     </div>
-
+                    <br><br>
                     <div class="column" data-name="lucas" onmouseover="showSocialMedia(event.currentTarget)" onmouseout="hideSocialMedia(event.currentTarget)">
                         <div class="has-text-centered">
-                            <img src="./images/team_lucas.jpg" class="team-img" alt="Team lucas">
+                            <img src="/static/images/team_lucas.jpg" class="team-img" alt="Team lucas">
                             <h4 class="title is-4">| Lucas Miraglia |</h4>
                             <p class="subtitle is-5 has-text-grey">CTO - COO</p>
                             <p class="team-text">
@@ -191,7 +187,7 @@
                         </div>
                     </div>
 
-                    <div class="column" data-name="fernando" onmouseover="showSocialMedia(event.currentTarget)" onmouseout="hideSocialMedia(event.currentTarget)">
+                    <!-- <div class="column" data-name="fernando" onmouseover="showSocialMedia(event.currentTarget)" onmouseout="hideSocialMedia(event.currentTarget)">
                         <div class="has-text-centered">
                             <img src="./images/team_fernando.jpg" class="team-img" alt="Team fernando">
                             <h4 class="title is-4">| Fernando Suarez |</h4>
@@ -215,7 +211,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -233,8 +229,8 @@
             </div>
 
             <div class="section">
-                <div class="level contact-form-section">
-                    <div class="container name-email-section">
+                <div class="columns contact-form-section">
+                    <div class="column name-email-section">
                         <div class="field">
                             <input type="text" class="input is-medium" placeholder="Your name" data-validation-required-message="Please enter a name" required="true" >
                         </div>
@@ -247,7 +243,8 @@
                             <input type="tel" class="input is-medium" placeholder="Your phone" data-validation-required-message="Please enter a phone" required="true">
                         </div>
                     </div>
-                    <div class="container text-section">
+                    <br><br>
+                    <div class="column text-section">
                         <div class="field">
                             <textarea type="text" class="textarea is-medium" placeholder="Your message..." rows="4" spellcheck="true" data-validation-required-message="Please enter a message" required="true"></textarea>
                         </div>
@@ -269,7 +266,7 @@
             <div class="level first-level-footer">
                 <div class="level-left">
                     <div class="level-item">
-                        <img src="./images/Selabs-logo-mini.png" alt="logo" width='35'>
+                        <img src="/static/images/Selabs-logo-mini.png" alt="logo" width='35'>
                     </div>
                 </div>
                 <div class="level-right">
@@ -302,6 +299,6 @@
         </div>
     </footer>
     
-    <script src="src/js/main.js"></script>
+    <script src="/static/src/js/main.js"></script>
 </body>
 </html>

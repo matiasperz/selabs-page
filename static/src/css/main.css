@@ -47,6 +47,7 @@ a{
     box-shadow: 0px 0px 25px hsla(0, 0%, 0%, 0.432);
 }
 
+
 .subtitle{
     font-weight: lighter;
 }
@@ -73,20 +74,20 @@ a{
     background: transparent;
 }
 
+
 .about-us{
     padding: 80px 0px 80px 0px;
     background: white;
 }
 
-.card.about-us-card{
-    width: 400px;
-    box-shadow: 0 0!important;
-    border: 0 ;
-}
-
 figure.aboutUs-figure{
     width: 250px;
-    margin: auto;
+    margin: 0px auto 25px auto;
+}
+
+p.about-us-text{
+    margin-top: 30px;
+    padding: 0px 3vw 0px 3vw;
 }
 
 img.aboutUs-img1{
@@ -136,16 +137,19 @@ img.aboutUs-img1{
 
 .team-text{
     margin-top: 30px;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 6vw 0px 6vw;
     font-weight: normal;
     font-size: 17px
 }
 
 .team-social-media-section{
     margin-top: 2rem;
-    padding: 0px 4rem 0px 4rem;
+    padding: 0px 6vw 0px 6vw;
     visibility: hidden;
 }
+
+
+
 
 .blink{
     margin: 0px;
