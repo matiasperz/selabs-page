@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/static/src/css/main.css">
-    <link rel="icon" href="/static/images/favicon_32x32.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/main.css">
+    <link rel="icon" href="./images/favicon_32x32.png">
 </head>
 <body>
     <button onclick="topFunction()" id="goTopButton" title="Go to top"><i class="fa fa-angle-up"></i></button> 
@@ -21,20 +21,20 @@
 
                         <div class="navbar-brand">
                             <a class="navbar-item">
-                                <img class="logoFlip" src="/static/images/Selabs-logo-mini.png" alt="Selabs">
+                                <img class="logoFlip" src="./images/Selabs-logo-mini.png" alt="Selabs">
                                 <span class="title is-4 navbar-logo-text logoIn">Selabs<span class="title is-4 navbar-logo-text blink">_</span></span>
                             </a>
                         </div>
 
                         <div id="navbarMenuHeroA" class="navbar-menu">
-                            <div class="navbar-end">
-                                <a class="navbar-item">
+                            <div id="navbar-links" class="navbar-end">
+                                <a class="navbar-item" data-anchor="aboutUs">
                                     About Us
                                 </a>
-                                <a class="navbar-item">
+                                <a class="navbar-item" data-anchor="founders">
                                     Founders
                                 </a>
-                                <a class="navbar-item">
+                                <a class="navbar-item" data-anchor="contact">
                                     Contact
                                 </a>
                             </div>
@@ -58,7 +58,7 @@
             
     </section>
 
-    <section class="about-us">
+    <section id="aboutUs" class="about-us">
             <div class="container">
                 <div class="has-text-centered">
                     <h1 class="title is-1">About Us</h1>
@@ -68,10 +68,10 @@
                 </div>
                 <div class="section about-us-img-section">
                     <div class="columns">
-                        <div class="column">
+                        <div class="column" onmouseover="onFocusMaximize(event.currentTarget)" onmouseout="onUnFocusMinimize(event.currentTarget)">
                             <div class="has-text-centered">
                                 <figure class="image aboutUs-figure">
-                                    <img src="/static/images/AboutUs_img2.jpg" class="aboutUs-img1">
+                                    <img src="./images/AboutUs_img2.jpg" class="aboutUs-img1">
                                 </figure>
                                 <h4 class="title is-4">Our Beginnings</h4>
                                 <p class="about-us-text">
@@ -84,10 +84,10 @@
 
                         <br><br><br>
 
-                        <div class="column">
+                        <div class="column" class="column" onmouseover="onFocusMaximize(event.currentTarget)" onmouseout="onUnFocusMinimize(event.currentTarget)">
                             <div class="has-text-centered">
                                 <figure class="image aboutUs-figure">
-                                    <img src="/static/images/custom_development2.jpg" class="aboutUs-img1">
+                                    <img src="./images/custom_development2.jpg" class="aboutUs-img1">
                                 </figure>
                                 <h4 class="title is-4">September Selabs_</h4>
                                 <p class="about-us-text">
@@ -101,10 +101,10 @@
 
                         <br><br><br>
 
-                        <div class="column">
+                        <div class="column" class="column" onmouseover="onFocusMaximize(event.currentTarget)" onmouseout="onUnFocusMinimize(event.currentTarget)">
                             <div class="has-text-centered">
                                 <figure class="image aboutUs-figure">
-                                    <img src="/static/images/Selabs-circulo-shadowed.jpg" class="aboutUs-img1">
+                                    <img src="./images/Selabs-circulo-shadowed.jpg" class="aboutUs-img1">
                                 </figure>
                                 <h4 class="title is-4">Selabs_</h4>
                                 <p class="about-us-text">
@@ -123,7 +123,7 @@
 
     <br><br><br><br>
 
-    <section class="team">
+    <section id="founders" class="team">
         <div class="container">
             <div class="has-text-centered">
                 <h1 class="title is-1">Founders</h1>
@@ -135,7 +135,7 @@
                 <div class="columns is-gapless">
                     <div class="column" data-name="enzo" onmouseover="showSocialMedia(event.currentTarget)" onmouseout="hideSocialMedia(event.currentTarget)">
                         <div class="has-text-centered">
-                            <img src="/static/images/team_enzo.jpg" class="team-img" alt="Team enzo">
+                            <img src="./images/team_enzo.jpg" class="team-img" alt="Team enzo">
                             <h4 class="title is-4">| Enzo Wouilloz |</h4>
                             <p class="subtitle is-5 has-text-grey">CEO</p>
                             <p class="team-text">
@@ -147,12 +147,12 @@
                             </p>
                             <div class="columns is-mobile team-social-media-section">
                                 <div class="column">
-                                    <a href="https://twitter.com/Enzo_Wouilloz">
+                                    <a href="https://twitter.com/Enzo_Wouilloz" target="_blank">
                                         <i class="fa fa-twitter fa-2x"></i>
                                     </a>
                                 </div>
                                 <div class="column">
-                                    <a href="https://ar.linkedin.com/in/enzo-wouilloz-424156172">
+                                    <a href="https://ar.linkedin.com/in/enzo-wouilloz-424156172" target="_blank">
                                         <i class="fa fa-linkedin fa-2x"></i>
                                     </a>
                                 </div>
@@ -162,7 +162,7 @@
                     <br><br>
                     <div class="column" data-name="lucas" onmouseover="showSocialMedia(event.currentTarget)" onmouseout="hideSocialMedia(event.currentTarget)">
                         <div class="has-text-centered">
-                            <img src="/static/images/team_lucas.jpg" class="team-img" alt="Team lucas">
+                            <img src="./images/team_lucas.jpg" class="team-img" alt="Team lucas">
                             <h4 class="title is-4">| Lucas Miraglia |</h4>
                             <p class="subtitle is-5 has-text-grey">CTO - COO</p>
                             <p class="team-text">
@@ -174,44 +174,18 @@
                             </p>
                             <div class="columns is-mobile team-social-media-section">
                                 <div class="column">
-                                    <a href="https://twitter.com/lucasmiraglia">
+                                    <a href="https://twitter.com/lucasmiraglia" target="_blank">
                                         <i class="fa fa-twitter fa-2x"></i>
                                     </a>
                                 </div>
                                 <div class="column">
-                                    <a href="https://www.linkedin.com/in/lucas-miraglia-28a76a127">
+                                    <a href="https://www.linkedin.com/in/lucas-miraglia-28a76a127" target="_blank">
                                         <i class="fa fa-linkedin fa-2x"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="column" data-name="fernando" onmouseover="showSocialMedia(event.currentTarget)" onmouseout="hideSocialMedia(event.currentTarget)">
-                        <div class="has-text-centered">
-                            <img src="./images/team_fernando.jpg" class="team-img" alt="Team fernando">
-                            <h4 class="title is-4">| Fernando Suarez |</h4>
-                            <p class="subtitle is-5 has-text-grey">CMO - Business Manager</p>
-                            <p class="team-text">
-                                Fernando Suarez providing a challenging attitude for almost 16 
-                                years & involved in several adventures ranging from IT, Banking,
-                                Industrial, Government, Oil & Gas, Startups, pursuing excellence 
-                                and problem-solving mindset to benefit our Customers.
-                            </p>
-                            <div class="columns is-mobile team-social-media-section">
-                                <div class="column">
-                                    <a href="">
-                                        <i class="fa fa-twitter fa-2x"></i>
-                                    </a>
-                                </div>
-                                <div class="column">
-                                    <a href="">
-                                        <i class="fa fa-linkedin fa-2x"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -219,7 +193,7 @@
     
     <br><br><br><br>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="has-text-centered">
                 <h1 class="title is-1">Contact</h1>
@@ -251,7 +225,7 @@
                     </div>
                 </div>
 
-                <div class="has-text-centered">
+                <div class="has-text-centered contact-button-div">
                     <button class="button is-success is-medium"><strong>Send Message</strong></button>
                 </div>
             </div>
@@ -266,7 +240,7 @@
             <div class="level first-level-footer">
                 <div class="level-left">
                     <div class="level-item">
-                        <img src="/static/images/Selabs-logo-mini.png" alt="logo" width='35'>
+                        <img src="./images/Selabs-logo-mini.png" alt="logo" width='35'>
                     </div>
                 </div>
                 <div class="level-right">

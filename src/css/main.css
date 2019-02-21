@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: -webkit-linear-gradient(rgb(174, 0, 255), violet, white) center fixed;
     background: linear-gradient(rgb(174, 0, 255), violet, white) center fixed;
@@ -17,6 +21,11 @@ textarea{
 
 a{
     color: inherit;
+    transition: none 86ms ease-out;
+}
+
+.column{
+    transition: none 100ms ease-in;
 }
 
 #goTopButton {
@@ -118,6 +127,10 @@ img.aboutUs-img1{
     padding: 0px 1.5rem 0px 1.5rem;
 }
 
+.contact-button-div{
+    margin-top: 80px;
+}
+
 
 
 .team{
@@ -164,6 +177,10 @@ img.aboutUs-img1{
     animation: 1000ms logoFlip forwards;
 }
 
+.focusMaximize{
+    animation: 300ms focusMaximize forwards;
+}
+
 @keyframes blinkIn{
     0% {
         opacity: 0;
@@ -198,5 +215,12 @@ img.aboutUs-img1{
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes focusMaximize{
+    100%{
+        transform: translateY(150px);
+        transform: scale(1.05);
     }
 }
