@@ -1,8 +1,5 @@
-html{
-    scroll-behavior: smooth;
-}
-
 body{
+    padding-top: 85px;
     background: -webkit-linear-gradient(rgb(174, 0, 255), violet, white) center fixed;
     background: linear-gradient(rgb(174, 0, 255), violet, white) center fixed;
     background:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgb(174, 0, 255)), color-stop(60%, violet), color-stop(100%, white)) center fixed;
@@ -24,8 +21,15 @@ a{
     transition: none 86ms ease-out;
 }
 
-.column{
-    transition: none 100ms ease-in;
+.navbar{
+    background-color: white !important;
+}
+
+a.navbar-item{
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    border-radius: 0px !important;
 }
 
 #goTopButton {
@@ -77,6 +81,12 @@ a{
     margin-left: 8px;
 }
 
+
+.is-active{
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #cc00ff !important;
+}
 
 
 .hero-body{
