@@ -22,15 +22,15 @@ $navbar_links.forEach(($a_button) => {
 function scrollFunction() {
   switch(true){
     case ((($sections[2].getBoundingClientRect().top - body_from_top) - GAP_FROM_TOP_VIEW) <= 0):
-        $section_indicator.style.width = ($navbar_links[2].getBoundingClientRect().right - $navbar_links[2].getBoundingClientRect().left)+'px';
+        $section_indicator.style.width = $navbar_links[2].getBoundingClientRect().width+'px';
         $section_indicator.style.left = (($navbar_links[2].getBoundingClientRect().left - logo_position) - 12)+'px';
       break;
       case ((($sections[1].getBoundingClientRect().top - body_from_top) - GAP_FROM_TOP_VIEW) <= 0):
-        $section_indicator.style.width = ($navbar_links[1].getBoundingClientRect().right - $navbar_links[1].getBoundingClientRect().left)+'px';
+        $section_indicator.style.width = $navbar_links[1].getBoundingClientRect().width+'px';
         $section_indicator.style.left = (($navbar_links[1].getBoundingClientRect().left - logo_position) - 12)+'px';
       break;
       case ((($sections[0].getBoundingClientRect().top - body_from_top) - GAP_FROM_TOP_VIEW) <= 0):
-        $section_indicator.style.width = ($navbar_links[0].getBoundingClientRect().right - $navbar_links[0].getBoundingClientRect().left)+'px';
+        $section_indicator.style.width = $navbar_links[0].getBoundingClientRect().width+'px';
         $section_indicator.style.left = (($navbar_links[0].getBoundingClientRect().left - logo_position) - 12)+'px';
       break;
   }
